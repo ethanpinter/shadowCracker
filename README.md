@@ -1,2 +1,2 @@
-# rainbowGenerator
-A python script designed to harness the power of Nvidia CUDA cores to calculate a rainbow table from a provided wordlist.
+# Shadow Cracker
+A python script designed to automate lengthy hash generation. Given a wordlist and a Linux shadow file, the script checks if any computed hashes match the shadow file. 
