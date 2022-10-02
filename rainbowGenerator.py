@@ -3,6 +3,7 @@ import bcrypt
 import sys
 import numpy as np
 from numba import jit
+from timeit import default_timer as timer
 
 ''' TODO
 // get file from args 
@@ -22,7 +23,7 @@ def hash(inputFile):
     return table
 
 if __name__ == "__main__":
-    
+    start = timer()
     table={}
 
     inputFile = open(sys.argv[1], 'r')
@@ -34,4 +35,5 @@ if __name__ == "__main__":
         print(key)
         print(hashTable[key])
         print("\n")
+    print(timer()-start)
         
